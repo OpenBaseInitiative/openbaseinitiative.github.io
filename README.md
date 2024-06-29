@@ -1,5 +1,4 @@
-
-![Logo](https://openbaseinitiative.github.io/OBBanner.png)
+<img src="https://openbaseinitiative.github.io/OBBanner.png" alt="Image" style="width: 100%; max-width: 800px; height: auto; max-height: 200px; object-fit: cover;">
 
 
 ## Welcome to OpenBase!
