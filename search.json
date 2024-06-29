@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Example Title 1",
+    "image": "https://openbase.obl.ong",
+    "description": "BlahBlah",
+  },
+  {
+    "name": "Example Title 2",
+    "image": "https://example.com/image2.jpg",
+    "category": "Cat2",
+    "description": "BlahBlah",
+    "detail1": "1",
+    "detail2": "2"
+  }
+]
