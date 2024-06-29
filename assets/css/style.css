@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body * {
-  margin-right: 20px;
-  margin-left: 20px;
+body html * {
+  margin-right: 10px;
+  margin-left: 10px;
   background-color: #bcd4c4;
   color: #404040;
   font-weight: 900;
   font-family: "PT Serif";
+}
+
+a {
+  color: #587058;
 }
 
