@@ -3,7 +3,7 @@
   
   {% include head.html %}
   
-  <body onload="myFunction()" style="margin:0;">
+  <body>
 
     <!--<div class="corners" id="loader">
 	<div class="corner corner--1"></div>
@@ -12,15 +12,8 @@
 	<div class="corner corner--4"></div>
     </div>-->
     
-    <div class="sk-folding-cube" id="loader">
-      <div class="sk-cube1 sk-cube"></div>
-      <div class="sk-cube2 sk-cube"></div>
-      <div class="sk-cube4 sk-cube"></div>
-      <div class="sk-cube3 sk-cube"></div>
-    </div>
-    
-    <main style="padding-top: 0 !important;">
-    <div id="myDiv" style="display: none;" class="animate-bottom">
+    <main>
+    <div>
       
 	<br>
         {{ content }}
