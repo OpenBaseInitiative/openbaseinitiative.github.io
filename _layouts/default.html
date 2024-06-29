@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  {% include head.html %}
+  
+  <body onload="myFunction()" style="margin:0;">
+
+    <!--<div class="corners" id="loader">
+	<div class="corner corner--1"></div>
+	<div class="corner corner--2"></div>
+	<div class="corner corner--3"></div>
+	<div class="corner corner--4"></div>
+    </div>-->
+    
+    <div class="sk-folding-cube" id="loader">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    
+    <main style="padding-top: 0 !important;">
+    <div id="myDiv" style="display: none;" class="animate-bottom">
+      
+	<br>
+        {{ content }}
+        <!-- page content -->
+        <div class="soundbutton" id="soundButton" xyz="fade rotate-right delay-4">
+          <i class="fas fa-play xyz-in"></i>
+        </div>
+      <audio id="soundtrack" loop>
+        <source src="/assets/nature-birds-singing-217212.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      {% include footer.html %}
+      
+    </div>
+    </main>
+
+    <!-- add javascript -->
+    <script type="text/javascript" src="https://openbaseinitiative.github.io/assets/js/main.js"></script>
+    
+  </body>
+  
+</html>
