@@ -1,4 +1,4 @@
-<img src="https://openbaseinitiative.github.io/OBBanner.png" alt="Image" style="width: 100%; max-width: 800px; height: auto; max-height: 200px; object-fit: cover;">
+<img src="https://openbaseinitiative.github.io/OBBanner.png" alt="Image" style="width: 100%; max-width: 100%; height: auto; max-height: 200px; /*object-fit: cover;*/ display: block; margin: 0 auto;">
 
 
 ## Welcome to OpenBase!
