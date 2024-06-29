@@ -1,15 +1,12 @@
 [
   {
-    "name": "Example Title 1",
-    "image": "https://openbase.obl.ong",
-    "description": "BlahBlah",
+    "name": "BotanyBase",
+    "image": "https://openbase.obl.ong/assets/BotanyBase.png",
+    "description": "A Simple Plant Identifiaction Guide, it's also a place to learn about plants!"
   },
   {
-    "name": "Example Title 2",
-    "image": "https://example.com/image2.jpg",
-    "category": "Cat2",
-    "description": "BlahBlah",
-    "detail1": "1",
-    "detail2": "2"
+    "name": "AstronomyBase",
+    "image": "https://openbase.obl.ong/assets/AstronomyBase.png",
+    "description": "Learn about Space, the Universe in a Site!"
   }
 ]
