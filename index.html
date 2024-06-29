@@ -11,68 +11,125 @@ title: Main
 
 <p>Read, Learn and Discuss, all for free by 1DST! Made for everyone, built by everyone.</p>
 
-
-
 <h2>Search Entries to OpenBase</h2>
 
 <!-- Search Bar -->
-<input type="search" id="search-input" placeholder="Search Database">
+<div class="search-container">
+    <input type="search" id="search-input" placeholder="Search Database" class="search-input">
+    <button class="search-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="search-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m0 0A7.5 7.5 0 1115 8.5a7.5 7.5 0 010 15z" />
+        </svg>
+    </button>
+</div>
 
 <!-- Important Part -->
-<div class="entries-container" style="display: flex; flex-wrap: wrap;"></div>
-
-
+<div class="entries-container"></div>
 
 <h2 id="features">Features</h2>
 
 <ul>
-<li>Various Website based on a specific topic</li>
-<li>Tools to help you in lots of ways</li>
-<li>Installability as a PWA</li>
-<li>Cross platform, on all devices (even mobile)</li>
+    <li>Various Website based on a specific topic</li>
+    <li>Tools to help you in lots of ways</li>
+    <li>Installability as a PWA</li>
+    <li>Cross platform, on all devices (even mobile)</li>
 </ul>
 
 <h2 id="roadmap">Roadmap</h2>
 
 <ul>
-<li><p>Additional browser support</p>
-</li>
-<li><p>Add more sites and additional user friendly elements</p>
-</li>
+    <li><p>Additional browser support</p></li>
+    <li><p>Add more sites and additional user friendly elements</p></li>
 </ul>
 
 <h2 id="acknowledgements">Acknowledgements</h2>
 
 <ul>
-<li><a href="https://1d10t1c-stud10s.github.io">Made by 1D10T1C STUD10S</a></li>
-<li><a href="https://discord.gg/Db8UqZNPcU">Our awesome community!</a></li>
+    <li><a href="https://1d10t1c-stud10s.github.io">Made by 1D10T1C STUD10S</a></li>
+    <li><a href="https://discord.gg/Db8UqZNPcU">Our awesome community!</a></li>
 </ul>
 
 <h2 id="feedback">Feedback</h2>
 
 <p>If you have any feedback, please reach out to us <a href="mailto:1d10t1cstud10s.contact@gmail.com">via email!</a></p>
 
+<script src="https://frontsearch.js.org/src/script.@1.1.js"></script>
 
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
 
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
 
+.search-input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    font-size: 16px;
+}
 
-<script>
-var frontsearchShowAll = false
+.search-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
 
-function getEntryHTML(entry) {
-    return `
-        <div style="background-color: #2d542f; border-radius: 5px; padding: 10px; padding-bottom: 10px; color: #ffffff !important; width: 100%; text-wrap: wrap;">
-        <h2>${entry.name}</h2>
-        <img src="${entry.image}" width="200px" height="auto" >
-        <p>${entry.description}</p>
-        </div>
-    `;
-};
-  
-const jsonUrls = [
-  'https://openbase.obl.ong/search.json'
-  // Add more URLs as needed
-];
-</script>
+.search-button:hover {
+    background-color: #0056b3;
+}
 
-<script src="https://frontsearch.js.org/src/script.@1.1.js">
+.search-icon {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+}
+
+.entries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.entry-card {
+    background-color: #2d542f;
+    border-radius: 5px;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.entry-card h2 {
+    margin-top: 0;
+}
+
+.entry-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        width: 70%;
+    }
+}
+</style>
+
