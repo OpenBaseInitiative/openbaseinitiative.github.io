@@ -46,6 +46,28 @@ title: Main
 
 <p>If you have any feedback, please reach out to us <a href="mailto:1d10t1cstud10s.contact@gmail.com">via email!</a></p>
 
+
+
+
+<script>
+var frontsearchShowAll = false
+
+function getEntryHTML(entry) {
+    return `
+        <div style="background-color: #2d542f; border-radius: 5px; padding: 10px; padding-bottom: 10px; color: #ffffff !important; width: 100%; text-wrap: wrap;">
+        <h2>${entry.name}</h2>
+        <img src="${entry.image}" width="200px" height="auto" >
+        <p>${entry.description}</p>
+        </div>
+    `;
+};
+  
+const jsonUrls = [
+  'https://openbase.obl.ong/search.json'
+  // Add more URLs as needed
+];
+</script>
+
 <script src="https://frontsearch.js.org/src/script.@1.1.js"></script>
 
 <style>
@@ -54,13 +76,16 @@ body {
 }
 
 .search-input {
-    width: 80%;
-    max-width: 400px;
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-    border-radius: 50px 0 0 50px;
-    outline: none;
-    font-size: 16px;
+  background-color: #8F9779; /* dull green color */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px; /* adjust the width as needed */
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #8F9779; /* add a subtle shadow on focus */
 }
 
 .entries-container {
