@@ -55,7 +55,7 @@ var frontsearchShowAll = false
 function getEntryHTML(entry) {
     return `
         <div style="background-color: #2d542f; border-radius: 5px; padding: 10px; padding-bottom: 10px; color: #ffffff !important; width: 100%; text-wrap: wrap;">
-        <h2>${entry.name}</h2>
+        <h2><a href="${entry.link}">${entry.name}</a></h2>
         <img src="${entry.image}" width="200px" height="auto" >
         <p>${entry.description}</p>
         </div>
