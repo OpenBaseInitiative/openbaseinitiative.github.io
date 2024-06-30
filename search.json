@@ -2,11 +2,13 @@
   {
     "name": "BotanyBase",
     "image": "https://openbase.obl.ong/assets/BotanyBase.png",
-    "description": "A Simple Plant Identifiaction Guide, it's also a place to learn about plants!"
+    "description": "A Simple Plant Identifiaction Guide, it's also a place to learn about plants!",
+    "link": "https://botanybase.obl.ong"
   },
   {
     "name": "AstronomyBase",
     "image": "https://openbase.obl.ong/assets/AstronomyBase.png",
-    "description": "Learn about Space, the Universe in a Site!"
+    "description": "Learn about Space, the Universe in a Site!",
+    "link": "https://astronomybase.obl.ong"
   }
 ]
